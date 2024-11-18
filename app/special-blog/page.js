@@ -25,8 +25,8 @@ export default async function Page() {
   const user = JSON.parse(headersList.get("users"));
   const blogs = await fetchSpecialBlogs();
   //   console.log("blogs", blogs);
-  console.log(user);
-  console.log(headersList);
+  // console.log(user);
+  // console.log(headersList);
 
   return (
     <div className="min-h-screen bg-gray-100 p-8">

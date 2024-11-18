@@ -16,10 +16,7 @@ const fetchBlog = async (documentId) => {
 };
 
 export default async function Page({ params }) {
-  const { documentId } = params;
-
-  console.log("Fetching blog for documentId:", documentId);
-  const blog = await fetchBlog(documentId);
+  const blog = await fetchBlog(params.documentId);
 
   if (!blog) {
     return <div>Error: Blog not found.</div>;
